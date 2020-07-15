@@ -20,14 +20,15 @@ public class Main {
     }
 
     static String deleteChars(String s, String remove){
-        char[] charsToRemove;
-        charsToRemove = remove.toCharArray();
 
 
-        for(int i = 0; i < charsToRemove.length; i++){
-           s = s.replaceAll(String.valueOf(charsToRemove[i]), "");
+        for(int i = 0; i < remove.length(); i++){
+           s = s.replaceAll(String.valueOf(remove.charAt(i)), "");
 
         }
+
+
+
 
         return s;
     }
